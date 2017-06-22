@@ -1,0 +1,74 @@
+
+<!DOCTYPE html>
+<html lang ="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>TODO App</title>
+    <link rel ="stylesheet" type ="text/css" href="style.css"/>
+  </head>
+  <body id="form">
+
+<form class="container" >
+  <div class="control-group" id="person">
+    <h1>Person</h1>
+    <label class="control control--radio" id= "adriana">Adriana
+      <input type="radio" name="assignTo" value ="Adriana" checked="checked"/>
+      <span class="control__indicator"></span>
+    </label>
+    <label class="control control--radio" id="brody">Brody
+      <input type="radio" name="assignTo" value="Brody"/>
+      <span class="control__indicator"></span>
+    </label>
+    <label class="control control--radio" id="bella">Bella
+      <input type="radio" name="assignTo" value="Bella"/>
+      <span class="control__indicator"></span>
+    </label>
+    <label class="control control--radio" id="alex">Alex
+      <input type="radio" name="assignTo" value="Alex"/>
+      <span class="control__indicator"></span>
+    </label>
+  </div>
+
+  <div class="control-group">
+    <h1>Task</h1>
+    <div class="form-group">
+      <textarea id="task" class="task" name="task" placeholder="Description goes here.."></textarea>
+    </div>
+  </div>
+
+  <div class="control-group">
+    <h1>Task Difficulty</h1>
+    <div for="level" class="select" id="select">
+      <select class="form-control" id="level" name="level">
+        <option value="0">Very Easy</option>
+        <option value="1">Easy</option>
+        <option value="2">Moderate</option>
+        <option value="3">Hard</option>
+        <option value="4">Very Hard</option>
+      </select>
+      <div class="select__arrow"></div>
+      <button class="btn" type = "submit" id="submit">Make Task!</button>
+    </div>
+  </div>
+
+
+  <div class="control-group-list" id="container">
+    <h1>TO DO LIST</h1>
+    <ul class="list-group">
+    </ul>
+  </div>
+
+  <div class="graph">
+    <h1>Pie Chart</h1>
+    <div id="chart_div">
+    </div>
+  </div>
+
+</form>
+
+
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+<script type="text/javascript" src='script.js'></script>
+  </body>
+</html>
